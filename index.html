@@ -1,0 +1,79 @@
+
+<!doctype html>
+<html lang="en"></html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>Ini Index Tugas</title>
+        <link rel='stylesheet' href='css/styles.css' />
+    </head>
+    <body>     
+        <div class="container">
+            <h1>Koversi Suhu</h1>
+            <p class="description">
+            Masukkan suhu dalam derajat Celcius (C) ke kotak dibawah, lalu klik tombol konversi untuk mendapatkan hasil dalam Fahrenheit (F).
+        </p>
+        
+        <form class="form">
+            <label for="celcius">Celcius (C):</label>
+            <textarea id="celcius" placeholder="Masukkan suhu dalam derajat C"></textarea>
+
+            <div class="button-container">
+                <button type="button" class="btn" id="convert-btn">Konversi</button>
+                <button type="button" class="btn" id="reset-btn">Reset</button>
+                <button type="button" class="btn" id="reverse-btn">Reverse</button>
+            </div>
+
+            <label for="fahrenheit">Fahrenheit (F):</label>
+            <textarea id="fahrenheit" placeholder="Hasil dalam F"></textarea>
+
+            <label for="kalkulasi">Cara Kalkulasi:</label>
+            <textarea
+            id="kalkulasi"
+            readonly
+            placeholder="cara kalkulasi"
+            ></textarea>
+        </form>
+
+        <a href="#" id="fahrenheitToCelcius">Fahrenheit ke Celcius</a>
+
+        <div id="fahrenheit-section" style="display: none">
+        <h2>Konversi Fahrenheit ke Celcius</h2>
+        <form class="form">
+            <label for="fahrenheit-input">Fahrenheit (F):</label>
+            <textarea
+            id="fahrenheit-input"
+            placeholder="Masukkan suhu dalam F"
+            ></textarea>
+
+            <div class="button-container">
+                <button type="button" class="btn" id="convert-fahrenheit-btn">
+                    Konversi
+                </button>
+                <button type="button" class="btn" id="reset-fahrenheit-btn">
+                    Reset
+                </button>
+            </div>
+
+            <label for="celcius-result">Celcius (C):</label>
+            <textarea id="celcius-result" placeholder="Hasil dalam C"></textarea>
+
+            <label for="kalkulasi-fahrenheit">Cara Kalkulasi:</label>
+            <textarea
+            id="kalkulasi-fahrenheit"
+            readonly
+            placeholder="cara kalkulasi"
+            ></textarea>
+        </form>
+    </div>
+
+    <h2>Cara Konversi dari Celcius (C) ke Fahrenheit (F)</h2>
+    <hr />
+    <p>S<sub>(F)</sub> = (S<sub>(C)</sub> x 9/5) + 32</p>
+    <p>atau</p>
+    <p>S<sub>(F)</sub> = (S<sub>(C)</sub> x 1.8) + 32</p>
+    </div>
+
+    <script src="js/script.js"></script>
+    </body>
+</html>
+
